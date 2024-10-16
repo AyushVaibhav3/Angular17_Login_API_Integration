@@ -55,6 +55,8 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {"proxyConfig": "./Proxy/dev.proxy.config.json"},
+        
           "configurations": {
             "production": {
               "buildTarget": "Angular17_API_Login_Integration:build:production"

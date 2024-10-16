@@ -14,3 +14,17 @@
     display: grid;
     padding: 2px;
 }
+
+.navbar-brand{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    justify-content: center;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 122%;
+    
+}
