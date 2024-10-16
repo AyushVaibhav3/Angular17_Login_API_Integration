@@ -1,4 +1,4 @@
-<section>
+<!-- <section> -->
     
 
     <div class="card" >
@@ -6,17 +6,17 @@
             <form>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                  <input type="email" [(ngModel)]="loginObj.EmailId" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" name="Email" required>
                   <div id="emailHelp" class="form-text"></div>
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <input type="password" [(ngModel)]="loginObj.Password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="Password" required>
                 </div>
                 <div class="mb-3 form-check">
                  
                 </div>
-                <div class="loginbutton"><button type="submit" class="btn btn-primary">Login</button></div>
+                <div class="loginbutton"><button type="button" (click)="onLogin()" class="btn btn-primary">Login</button></div>
               </form>
           </div>
       </div>
@@ -24,4 +24,4 @@
    
 
 
-</section>
+<!-- </section> -->
